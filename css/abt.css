@@ -1,0 +1,107 @@
+
+h2, h3 {
+    color: #0056b3;
+    margin-top: 20px;
+}
+
+.about-us {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.226);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-us h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+}
+
+.about-us h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #0056b3;
+    padding-bottom: 5px;
+}
+
+.about-us p, .about-us ul {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #666;
+}
+
+.about-us ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.about-us li {
+    margin-bottom: 10px;
+}
+
+.about-us .highlight {
+    background-color: #0056b3;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+.about-us .section {
+    margin-top: 20px;
+    background: #f2f2f2;
+    padding: 15px;
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-us .join-us {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about-us .join-us p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    .about-us {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .about-us h2 {
+        font-size: 2em;
+    }
+
+    .about-us h3 {
+        font-size: 1.5em;
+    }
+
+    .about-us p, .about-us ul {
+        font-size: 1em;
+    }
+
+    .about-us .join-us p {
+        font-size: 1.1em;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

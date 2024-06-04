@@ -1,0 +1,29 @@
+
+.header{
+   background-color: rgb(255, 145, 0);
+    width: 100%;
+    height: 100vh;
+    padding-top: 10%;
+}
+.homeparat{
+    /* background-color: aquamarine; */
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.onehome{
+    /* background-color: azure; */
+    width: 45%;
+    height: 100%;
+}
+.twohome{
+    /* background-color: rgb(4, 189, 189); */
+    width: 50%;
+    height: 100%;
+}
+
+/* ////////////////////////////// */
+

@@ -1,0 +1,92 @@
+
+
+h2, h3 {
+    color: #0056b3;
+    margin-top: 20px;
+}
+
+.career-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: left;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    animation: fadeInCareer 1s ease-in-out;
+}
+
+.career-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+}
+
+.career-section h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #0056b3;
+    padding-bottom: 5px;
+}
+
+.career-section p, .career-section ul {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #666;
+}
+
+.career-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.career-section li {
+    margin-bottom: 10px;
+}
+
+.career-section a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.career-section a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .career-section {
+        padding: 10px;
+        width: 90%;
+    }
+
+    .career-section h2 {
+        font-size: 2em;
+    }
+
+    .career-section h3 {
+        font-size: 1.5em;
+    }
+
+    .career-section p, .career-section ul {
+        font-size: 1em;
+    }
+}
+
+/* Animations */
+@keyframes fadeInCareer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.career-section, .career-section h2, .career-section h3, .career-section p, .career-section ul {
+    animation: fadeInCareer 1s ease-in-out;
+}

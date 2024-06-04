@@ -1,0 +1,38 @@
+/* Contact Section Styles */
+.contact-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    animation: fadeInContact 1s ease-in-out;
+}
+
+.contact-section h2 {
+    color: #0056b3;
+    margin-top: 20px;
+}
+
+.contact-section p {
+    margin-bottom: 20px;
+}
+
+/* Custom Styling for Google Form */
+.contact-section iframe {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-section iframe {
+        width: 90%;
+        height: 500px; /* Adjust height for smaller screens */
+    }
+}

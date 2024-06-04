@@ -1,0 +1,107 @@
+
+
+.header {
+   
+    padding: 100px; /* Adjust padding as needed */
+}
+
+.homeparat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.onehome {
+    
+    flex-basis: 45%; /* Adjust the width of the text side */
+    margin-right: 20px; /* Add spacing between elements */
+    margin-top: 25%; /* Adjust margin-top for text side */
+}
+
+.twohome {
+    flex-basis: 45%; /* Adjust the width of the slider side */
+    margin-top: 10px; /* Adjust margin-top for slider side */
+}
+
+.onehome h1 {
+    font-size: 2.5em; /* Adjust font size for heading */
+    color: #333; /* Text color */
+}
+
+.onehome p {
+    font-size: 1.2em; /* Adjust font size for paragraph */
+    color: #552525; /* Text color */
+    margin-top: 20px; /* Adjust spacing */
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden; /* Ensure images do not overflow */
+}
+
+.mySlides img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    .homeparat {
+        flex-direction: column; /* Stack elements vertically on mobile */
+        align-items: center; /* Center elements vertically on mobile */
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .onehome, .twohome {
+        flex-basis: 100%; /* Full width for both sides on mobile */
+        margin: 0; /* Remove margin on mobile */
+    }
+    .onehome{
+        width: 300px;
+        height: 350px;
+        margin: 0;
+        padding: 0;
+
+    }
+   .twohome {
+    margin-top: 50px;
+    width: 350px;
+    height: 350px;
+   }
+
+    .onehome h1 {
+        font-size: 2em; /* Adjust font size for heading on mobile */
+        text-align: center;
+    }
+
+    .onehome p {
+        font-size: 1em; /* Adjust font size for paragraph on mobile */
+        margin-top: 15px; 
+        margin-bottom: 15px;
+       
+    }
+    .mySlides img {
+        max-width: 250px;
+        max-height: 250px;
+        min-width: 100%;
+       
+    }
+}
